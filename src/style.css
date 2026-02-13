@@ -1014,31 +1014,48 @@ body.snap-scroll.show-footer .footer {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 140px !important;
+  padding-bottom: 60px !important;
   background-image: var(--section-background-color) !important;
 }
 
+.projects-intro {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 22px;
+}
+
+.projects-subtitle {
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+}
+
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
   height: auto !important;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(53, 136, 80, 0.459) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
   color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(72, 144, 96, 0.561) !important;
+  box-shadow: 0 14px 46px rgba(0, 230, 118, 0.12) !important;
+  border-color: rgba(0, 230, 118, 0.25);
 }
 
 .blog-card {
@@ -1076,6 +1093,76 @@ body.snap-scroll.show-footer .footer {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+}
+
+.project-card-view .project-card-image {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.project-card-text {
+  flex: 1 1 auto;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+.project-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px;
+  padding: 0.6rem 0.95rem !important;
+  border-radius: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px;
+  line-height: 1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 230, 118, 0.08) !important;
+  border-color: rgba(0, 230, 118, 0.45) !important;
+  box-shadow: 0 16px 34px rgba(0, 230, 118, 0.12);
+  color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.project-card-btn:focus,
+.project-card-btn:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(0, 230, 118, 0.18), 0 16px 34px rgba(0, 230, 118, 0.12) !important;
+}
+
+.project-card-btn-github {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(0, 230, 118, 0.06)) !important;
+}
+
+.project-card-btn-demo {
+  background: rgba(0, 230, 118, 0.14) !important;
+  border-color: rgba(0, 230, 118, 0.32) !important;
 }
 
 .blog-img {
@@ -1643,22 +1730,45 @@ body.snap-scroll.show-footer .footer {
 }
 
 .fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
+  display: flex;
+  align-items: center;
+  padding-top: 0 !important;
 }
 
 .fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #4cce755e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px;
+  padding: 0.55rem 0.9rem !important;
+  border-radius: 9999px !important;
+  background: rgba(6, 78, 59, 0.18) !important;
+  border: 1px solid rgba(0, 230, 118, 0.28) !important;
+  box-shadow: 0 12px 34px rgba(0, 230, 118, 0.08);
+  color: rgba(231, 255, 244, 0.98) !important;
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px;
+  line-height: 1 !important;
+}
+
+.fork-btn-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1px;
 }
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #4dd37a86 !important;
-  border-color: #4dd37a86 !important;
+  background: rgba(6, 78, 59, 0.32) !important;
+  border-color: rgba(0, 230, 118, 0.5) !important;
+  box-shadow: 0 16px 42px rgba(0, 230, 118, 0.12);
+  color: rgba(241, 255, 250, 0.98) !important;
+}
+
+.fork-btn-inner:focus,
+.fork-btn-inner:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(0, 230, 118, 0.18), 0 16px 42px rgba(0, 230, 118, 0.12) !important;
 }
 .fork-btn-inner::after {
   display: none !important;

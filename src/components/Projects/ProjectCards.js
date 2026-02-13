@@ -8,37 +8,54 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       {props.imgPath ? (
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <Card.Img
+          variant="top"
+          src={props.imgPath}
+          alt="card-img"
+          className="project-card-image"
+        />
       ) : null}
-      <Card.Body>
+      <Card.Body className="project-card-body">
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        {Array.isArray(props.tags) && props.tags.length > 0 ? (
+          <div className="project-card-tags">
+            {props.tags.map((tag) => (
+              <span key={tag} className="highlight-badge">
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null}
+        <Card.Text style={{ textAlign: "justify" }} className="project-card-text">
           {props.description}
         </Card.Text>
-        {props.ghLink ? (
-          <>
-            <Button variant="primary" href={props.ghLink} target="_blank">
-              <BsGithub /> &nbsp;
+        <div className="project-card-actions">
+          {props.ghLink ? (
+            <Button
+              variant="primary"
+              href={props.ghLink}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card-btn project-card-btn-github"
+            >
+              <BsGithub />
               {props.isBlog ? "Blog" : "GitHub"}
             </Button>
-            {"\n"}
-            {"\n"}
-          </>
-        ) : null}
+          ) : null}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: props.ghLink ? "10px" : undefined }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+          {!props.isBlog && props.demoLink ? (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card-btn project-card-btn-demo"
+            >
+              <CgWebsite />
+              {"Demo"}
+            </Button>
+          ) : null}
+        </div>
       </Card.Body>
     </Card>
   );

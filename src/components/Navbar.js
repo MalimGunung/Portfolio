@@ -6,7 +6,6 @@ import Button from "react-bootstrap/Button";
 import { Link, useLocation } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineMail,
@@ -113,12 +112,14 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/MalimGunung/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
+                rel="noreferrer"
+                aria-label="Open GitHub repository"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1.1em" }} />
+                <span className="fork-btn-text">Repo</span>
               </Button>
             </Nav.Item>
           </Nav>
@@ -127,5 +128,4 @@ function NavBar() {
     </Navbar>
   );
 }
-
 export default NavBar;
