@@ -51,9 +51,9 @@ function Home3() {
               data-reveal
               className="reveal reveal-up"
               style={{
-                fontSize: "3.2em",
+                fontSize: "2.75em",
                 fontWeight: "bold",
-                lineHeight: "1.1",
+                lineHeight: "1.15",
                 color: "white",
                 "--reveal-delay": "0ms",
               }}

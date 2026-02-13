@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import smartDispatch from "../../Assets/Projects/SmartDispatch.png";
 import roadCare from "../../Assets/Projects/RaodCare1.png";
+import travelDiary from "../../Assets/Projects/Travel Diary.png";
 
 function Projects() {
   return (
@@ -73,6 +74,44 @@ function Projects() {
                 </>
               }
               ghLink="https://github.com/MalimGunung/RoadCare"
+            />
+          </Col>
+          <Col xs={12} md={6} lg={5} className="project-card">
+            <ProjectCard
+              imgPath={travelDiary}
+              isBlog={false}
+              title="Travel Diary App"
+              tags={["Flutter", "Firebase Auth", "Firestore", "Maps", "Biometric"]}
+              description={
+                <>
+                  <div>
+                    This project is a Flutter mobile app that lets users record
+                    travel journals with title, notes, date, location (picked on
+                    a map), images, and a rating. It uses Firebase for
+                    authentication and Firestore to store journal entries.
+                  </div>
+                  <br />
+                  <div>Key Features</div>
+                  <ul>
+                    <li>Email/password authentication (Firebase Auth)</li>
+                    <li>Optional biometric login via local_auth</li>
+                    <li>
+                      Add/edit/delete travel journal entries (title, notes, date,
+                      rating)
+                    </li>
+                    <li>
+                      Pick location on an interactive map (OpenStreetMap via
+                      flutter_map + Nominatim reverse geocoding)
+                    </li>
+                    <li>
+                      Add photos via camera/gallery (stores local image path) and
+                      simple image controls
+                    </li>
+                    <li>Search and list your journal entries</li>
+                  </ul>
+                </>
+              }
+              ghLink="https://github.com/MalimGunung/travel-diary-app"
             />
           </Col>
         </Row>
