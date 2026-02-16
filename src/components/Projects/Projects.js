@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import smartDispatch from "../../Assets/Projects/SmartDispatch.png";
-import roadCare from "../../Assets/Projects/RaodCare1.png";
-import travelDiary from "../../Assets/Projects/Travel Diary.png";
+import smartDispatch from "../../Assets/Projects/smart-disptch.png";
+import roadCare from "../../Assets/Projects/road-care.png";
+import travelDiary from "../../Assets/Projects/travle-diary.png";
 
 function Projects() {
   return (
