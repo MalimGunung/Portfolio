@@ -2,16 +2,19 @@ html {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(16, 17, 16, 0.582),
-    rgba(8, 24, 8, 0.904)
+    rgba(8, 18, 44, 0.92)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(16, 17, 16, 0.678),
-    rgba(10, 22, 10, 0.863)
+    rgba(10, 18, 40, 0.88)
   );
 
-  --imp-text-color: #00e676;
+  --imp-text-color: #3b82f6;
+  --imp-text-rgb: 59, 130, 246;
+  --imp-dark-rgb: 30, 58, 138;
+  --imp-soft-text-color: #93c5fd;
 }
 
 .purple {
@@ -32,7 +35,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #051308;
+  background-color: #050b1a;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -111,18 +114,18 @@ body.snap-scroll.show-footer .footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0d2a1a;
+  background: #0b1a33;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 230, 118, 0.959);
+  background: rgba(var(--imp-text-rgb), 0.92);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 200, 100, 0.911);
+  background: rgba(var(--imp-text-rgb), 0.78);
   border-radius: 12px;
 }
 
@@ -132,7 +135,7 @@ body.snap-scroll.show-footer .footer {
 .sticky {
   background-color: rgba(15, 12, 41, 0.95) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 29, 9, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(7, 15, 38, 0.22) !important;
   backdrop-filter: blur(15px) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
   padding: 0.5rem 2rem !important;
@@ -159,7 +162,7 @@ body.snap-scroll.show-footer .footer {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #00e676 !important;
+  background-color: var(--imp-text-color) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -227,7 +230,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .terminal-underscore {
-  color: #00e676;
+  color: var(--imp-text-color);
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -245,7 +248,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .navbar-nav .nav-link.active {
-  color: rgba(241, 255, 250, 0.98) !important;
+  color: rgba(241, 247, 255, 0.98) !important;
 }
 
 .navbar-nav .nav-link.active svg {
@@ -259,7 +262,7 @@ body.snap-scroll.show-footer .footer {
 .nav-arrow {
   position: absolute;
   left: 0;
-  color: #00e676;
+  color: var(--imp-text-color);
   opacity: 0;
   transition: opacity 0.3s ease;
   font-weight: bold;
@@ -301,9 +304,9 @@ body.snap-scroll.show-footer .footer {
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 1rem !important;
-  background-color: rgba(6, 78, 59, 0.2) !important;
-  border: 1px solid rgba(6, 78, 59, 0.5) !important;
-  color: #34d399 !important;
+  background-color: rgba(var(--imp-dark-rgb), 0.2) !important;
+  border: 1px solid rgba(var(--imp-dark-rgb), 0.5) !important;
+  color: var(--imp-soft-text-color) !important;
   font-size: 0.75rem !important;
   border-radius: 0.25rem !important;
   transition: all 0.3s ease !important;
@@ -313,8 +316,8 @@ body.snap-scroll.show-footer .footer {
 }
 
 .fork-btn-terminal:hover {
-  background-color: rgba(6, 78, 59, 0.4) !important;
-  color: #34d399 !important;
+  background-color: rgba(var(--imp-dark-rgb), 0.38) !important;
+  color: var(--imp-soft-text-color) !important;
   transform: translateY(-2px);
 }
 
@@ -414,7 +417,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .main-name {
-  color: #00e676;
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
@@ -509,7 +512,7 @@ body.snap-scroll.show-footer .footer {
 
 .home-about-image-card {
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(0, 230, 118, 0.18);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.18);
   border-radius: 22px;
   overflow: hidden;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
@@ -544,7 +547,7 @@ body.snap-scroll.show-footer .footer {
   padding: 10px 12px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(0, 230, 118, 0.18);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.18);
   backdrop-filter: blur(12px);
   display: inline-flex;
   flex-wrap: wrap;
@@ -572,8 +575,8 @@ body.snap-scroll.show-footer .footer {
   font-family: "Outfit", sans-serif !important;
   font-weight: 600 !important;
   letter-spacing: 0.2px;
-  border: 1px solid rgba(0, 230, 118, 0.35) !important;
-  color: rgba(231, 255, 244, 0.98) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.35) !important;
+  color: rgba(233, 242, 255, 0.98) !important;
   transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, border-color 200ms ease;
 }
 
@@ -582,19 +585,19 @@ body.snap-scroll.show-footer .footer {
 }
 
 .btn-modern-primary {
-  background: linear-gradient(135deg, rgba(0, 230, 118, 0.26), rgba(6, 78, 59, 0.12)) !important;
-  box-shadow: 0 10px 30px rgba(0, 230, 118, 0.12);
+  background: linear-gradient(135deg, rgba(var(--imp-text-rgb), 0.28), rgba(var(--imp-dark-rgb), 0.14)) !important;
+  box-shadow: 0 10px 30px rgba(var(--imp-text-rgb), 0.12);
 }
 
 .btn-modern-ghost {
-  background: rgba(6, 78, 59, 0.14) !important;
-  border-color: rgba(0, 230, 118, 0.22) !important;
+  background: rgba(var(--imp-dark-rgb), 0.14) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.22) !important;
 }
 
 .btn-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px rgba(0, 230, 118, 0.16);
-  border-color: rgba(0, 230, 118, 0.55) !important;
+  box-shadow: 0 14px 34px rgba(var(--imp-text-rgb), 0.16);
+  border-color: rgba(var(--imp-text-rgb), 0.55) !important;
 }
 
 .btn-modern:active {
@@ -611,12 +614,12 @@ body.snap-scroll.show-footer .footer {
   width: 44px !important;
   height: 44px !important;
   background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(0, 230, 118, 0.28) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.28) !important;
   backdrop-filter: blur(10px) !important;
 }
 
 .cta-group .home-social-icons:hover {
-  box-shadow: 0 0 0 4px rgba(0, 230, 118, 0.12), 0 0 10px rgba(0, 230, 118, 0.18) !important;
+  box-shadow: 0 0 0 4px rgba(var(--imp-text-rgb), 0.12), 0 0 10px rgba(var(--imp-text-rgb), 0.18) !important;
 }
 
 @media (max-width: 767px) {
@@ -680,7 +683,7 @@ body.snap-scroll.show-footer .footer {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #1e5c36;
+  background: rgb(var(--imp-dark-rgb));
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -688,13 +691,13 @@ body.snap-scroll.show-footer .footer {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #2ecc71;
+  box-shadow: 0 0 15px rgba(var(--imp-text-rgb), 0.75);
 }
 
 .home-social-icons:hover {
-  color: #2ecc71;
-  box-shadow: 0 0 5px #2ecc71;
-  text-shadow: 0 0 2px #2ecc71;
+  color: var(--imp-text-color);
+  box-shadow: 0 0 5px rgba(var(--imp-text-rgb), 0.65);
+  text-shadow: 0 0 2px rgba(var(--imp-text-rgb), 0.65);
 }
 
 .social-icons {
@@ -704,7 +707,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .icon-colour {
-  color: #00e676 !important;
+  color: var(--imp-text-color) !important;
 }
 
 /* --------- */
@@ -766,12 +769,12 @@ body.snap-scroll.show-footer .footer {
 }
 
 .footer-icons .social-icons a:hover {
-  color: #00e676 !important;
+  color: var(--imp-text-color) !important;
   transform: translateY(-2px);
 }
 
 .blockquote-footer {
-  color: #88c098 !important;
+  color: var(--imp-soft-text-color) !important;
 }
 /* --------- */
 /* --------- */
@@ -804,7 +807,7 @@ body.snap-scroll.show-footer .footer {
 
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(0, 230, 118, 0.5) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.5) !important;
 }
 
 .service-icon-wrapper {
@@ -812,8 +815,8 @@ body.snap-scroll.show-footer .footer {
 }
 
 .service-icon {
-  background-color: rgba(6, 78, 59, 0.2);
-  color: #00e676; /* Terminal green */
+  background-color: rgba(var(--imp-dark-rgb), 0.2);
+  color: var(--imp-text-color);
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -821,7 +824,7 @@ body.snap-scroll.show-footer .footer {
   align-items: center;
   justify-content: center;
   font-size: 1.45em;
-  border: 1px solid rgba(6, 78, 59, 0.5);
+  border: 1px solid rgba(var(--imp-dark-rgb), 0.5);
 }
 
 .service-description {
@@ -851,18 +854,18 @@ body.snap-scroll.show-footer .footer {
 .service-number {
   font-size: 1.05em;
   font-weight: bold;
-  color: #00e676;
+  color: var(--imp-text-color);
   font-family: "Outfit", sans-serif !important;
 }
 
 .exp-card {
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(0, 230, 118, 0.18);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.18);
   border-radius: 22px;
   padding: 28px;
   height: 100%;
   min-height: 190px;
-  color: rgba(241, 255, 250, 0.96);
+  color: rgba(241, 247, 255, 0.96);
   backdrop-filter: blur(14px);
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
@@ -870,7 +873,7 @@ body.snap-scroll.show-footer .footer {
 .exp-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
-  border-color: rgba(0, 230, 118, 0.35);
+  border-color: rgba(var(--imp-text-rgb), 0.35);
 }
 
 .exp-cta-card {
@@ -899,8 +902,8 @@ body.snap-scroll.show-footer .footer {
 
 .exp-cta-button {
   background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(0, 230, 118, 0.22) !important;
-  color: rgba(241, 255, 250, 0.96) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.22) !important;
+  color: rgba(241, 247, 255, 0.96) !important;
   border-radius: 9999px !important;
   padding: 10px 16px !important;
   font-weight: 600 !important;
@@ -908,8 +911,8 @@ body.snap-scroll.show-footer .footer {
 
 .exp-cta-button:hover {
   transform: translateY(-2px);
-  background: rgba(0, 230, 118, 0.12) !important;
-  border-color: rgba(0, 230, 118, 0.45) !important;
+  background: rgba(var(--imp-text-rgb), 0.12) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.45) !important;
 }
 
 .exp-card-top {
@@ -926,9 +929,9 @@ body.snap-scroll.show-footer .footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(6, 78, 59, 0.18);
-  border: 1px solid rgba(0, 230, 118, 0.22);
-  color: #00e676;
+  background: rgba(var(--imp-dark-rgb), 0.18);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.22);
+  color: var(--imp-text-color);
   font-weight: 700;
 }
 
@@ -986,7 +989,7 @@ body.snap-scroll.show-footer .footer {
 
 .highlight-box {
   background: rgba(196, 113, 237, 0.1);
-  border-left: 3px solid #00e676;
+  border-left: 3px solid var(--imp-text-color);
   padding: 1rem;
   border-radius: 0 0.5rem 0.5rem 0;
   margin-top: 1.5rem;
@@ -999,13 +1002,13 @@ body.snap-scroll.show-footer .footer {
   margin-bottom: 0.5rem;
   border-radius: 9999px;
   font-size: 0.875rem;
-  background-color: rgba(0, 230, 118, 0.1);
-  color: #00e676;
-  border: 1px solid rgba(0, 230, 118, 0.2);
+  background-color: rgba(var(--imp-text-rgb), 0.12);
+  color: var(--imp-text-color);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.24);
 }
 
 .purple-gradient {
-  background: linear-gradient(135deg, #00e676 0%, #34d399 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1054,8 +1057,8 @@ body.snap-scroll.show-footer .footer {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 14px 46px rgba(0, 230, 118, 0.12) !important;
-  border-color: rgba(0, 230, 118, 0.25);
+  box-shadow: 0 14px 46px rgba(var(--imp-text-rgb), 0.12) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.25);
 }
 
 .blog-card {
@@ -1068,7 +1071,7 @@ body.snap-scroll.show-footer .footer {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(77, 161, 105, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(var(--imp-text-rgb), 0.22) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -1086,7 +1089,7 @@ body.snap-scroll.show-footer .footer {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(88, 173, 116, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(var(--imp-text-rgb), 0.34) !important;
 }
 
 .card-img-top {
@@ -1144,25 +1147,25 @@ body.snap-scroll.show-footer .footer {
 
 .project-card-btn:hover {
   transform: translateY(-2px);
-  background: rgba(0, 230, 118, 0.08) !important;
-  border-color: rgba(0, 230, 118, 0.45) !important;
-  box-shadow: 0 16px 34px rgba(0, 230, 118, 0.12);
+  background: rgba(var(--imp-text-rgb), 0.09) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.45) !important;
+  box-shadow: 0 16px 34px rgba(var(--imp-text-rgb), 0.12);
   color: rgba(255, 255, 255, 0.96) !important;
 }
 
 .project-card-btn:focus,
 .project-card-btn:focus-visible {
   outline: none !important;
-  box-shadow: 0 0 0 4px rgba(0, 230, 118, 0.18), 0 16px 34px rgba(0, 230, 118, 0.12) !important;
+  box-shadow: 0 0 0 4px rgba(var(--imp-text-rgb), 0.18), 0 16px 34px rgba(var(--imp-text-rgb), 0.12) !important;
 }
 
 .project-card-btn-github {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(0, 230, 118, 0.06)) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(var(--imp-text-rgb), 0.06)) !important;
 }
 
 .project-card-btn-demo {
-  background: rgba(0, 230, 118, 0.14) !important;
-  border-color: rgba(0, 230, 118, 0.32) !important;
+  background: rgba(var(--imp-text-rgb), 0.14) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.32) !important;
 }
 
 .blog-img {
@@ -1173,14 +1176,14 @@ body.snap-scroll.show-footer .footer {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #2e7d32 !important;
-  border-color: #2e7d32 !important;
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #388e3c !important;
-  border-color: #388e3c !important;
+  background-color: #1d4ed8 !important;
+  border-color: #1d4ed8 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -1226,7 +1229,7 @@ body.snap-scroll.show-footer .footer {
   height: 4px;
   border-radius: 9999px;
   margin: 0 auto;
-  background: linear-gradient(90deg, rgba(0, 230, 118, 0), rgba(0, 230, 118, 0.95), rgba(0, 230, 118, 0));
+  background: linear-gradient(90deg, rgba(var(--imp-text-rgb), 0), rgba(var(--imp-text-rgb), 0.95), rgba(var(--imp-text-rgb), 0));
   opacity: 0.9;
 }
 
@@ -1239,13 +1242,13 @@ body.snap-scroll.show-footer .footer {
   padding: 26px 22px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 230, 118, 0.14);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14);
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(12px);
 }
 
 .about-block-title {
-  color: rgba(241, 255, 250, 0.98);
+  color: rgba(241, 247, 255, 0.98);
   font-size: 2.05em;
   font-weight: 600;
   margin: 0 0 18px 0;
@@ -1295,7 +1298,7 @@ body.snap-scroll.show-footer .footer {
   color: white;
   gap: 10px;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(0, 230, 118, 0.14);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14);
   backdrop-filter: blur(10px);
 }
 
@@ -1326,7 +1329,7 @@ body.snap-scroll.show-footer .footer {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border-color: rgba(0, 230, 118, 0.4) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.4) !important;
 }
 .tech-icon-images {
   height: 1.6rem;
@@ -1334,7 +1337,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .quote-card-view {
-  border: 1px solid rgba(0, 230, 118, 0.14) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14) !important;
   border-radius: 22px !important;
   color: white !important;
   background: rgba(255, 255, 255, 0.03) !important;
@@ -1399,22 +1402,22 @@ body.snap-scroll.show-footer .footer {
   border-radius: 14px !important;
   padding: 10px 16px !important;
   font-weight: 700 !important;
-  background: linear-gradient(135deg, rgba(0, 230, 118, 0.26), rgba(6, 78, 59, 0.12)) !important;
-  border: 1px solid rgba(0, 230, 118, 0.35) !important;
-  color: rgba(231, 255, 244, 0.98) !important;
-  box-shadow: 0 10px 30px rgba(0, 230, 118, 0.12);
+  background: linear-gradient(135deg, rgba(var(--imp-text-rgb), 0.28), rgba(var(--imp-dark-rgb), 0.14)) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.35) !important;
+  color: rgba(233, 242, 255, 0.98) !important;
+  box-shadow: 0 10px 30px rgba(var(--imp-text-rgb), 0.12);
 }
 
 .resume-download-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px rgba(0, 230, 118, 0.16);
-  border-color: rgba(0, 230, 118, 0.55) !important;
+  box-shadow: 0 14px 34px rgba(var(--imp-text-rgb), 0.16);
+  border-color: rgba(var(--imp-text-rgb), 0.55) !important;
 }
 
 .resume-viewer {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 230, 118, 0.14);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14);
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(12px);
   padding: 18px;
@@ -1439,9 +1442,9 @@ body.snap-scroll.show-footer .footer {
   justify-content: center;
   font-size: 0.9rem;
   font-weight: 700;
-  color: rgba(231, 255, 244, 0.96);
+  color: rgba(233, 242, 255, 0.96);
   background: rgba(15, 12, 41, 0.45);
-  border: 1px solid rgba(0, 230, 118, 0.16);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.16);
   border-radius: 9999px;
   padding: 8px 12px;
   margin: 0 auto 12px auto;
@@ -1484,7 +1487,7 @@ body.snap-scroll.show-footer .footer {
   height: 4px;
   border-radius: 9999px;
   margin: 0 auto;
-  background: linear-gradient(90deg, rgba(0, 230, 118, 0), rgba(0, 230, 118, 0.95), rgba(0, 230, 118, 0));
+  background: linear-gradient(90deg, rgba(var(--imp-text-rgb), 0), rgba(var(--imp-text-rgb), 0.95), rgba(var(--imp-text-rgb), 0));
   opacity: 0.9;
 }
 
@@ -1495,7 +1498,7 @@ body.snap-scroll.show-footer .footer {
 .contact-card {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 230, 118, 0.14);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14);
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(12px);
   padding: 24px;
@@ -1506,19 +1509,19 @@ body.snap-scroll.show-footer .footer {
   margin: 0 0 16px 0;
   font-size: 1.35rem;
   font-weight: 700;
-  color: rgba(241, 255, 250, 0.98);
+  color: rgba(241, 247, 255, 0.98);
 }
 
 .contact-link {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: rgba(241, 255, 250, 0.96);
+  color: rgba(241, 247, 255, 0.96);
   text-decoration: none;
   padding: 12px 14px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(0, 230, 118, 0.14);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.14);
 }
 
 .contact-link + .contact-link {
@@ -1526,7 +1529,7 @@ body.snap-scroll.show-footer .footer {
 }
 
 .contact-link:hover {
-  border-color: rgba(0, 230, 118, 0.4);
+  border-color: rgba(var(--imp-text-rgb), 0.4);
   color: white;
 }
 
@@ -1551,31 +1554,31 @@ body.snap-scroll.show-footer .footer {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: rgba(231, 255, 244, 0.98);
+  color: rgba(233, 242, 255, 0.98);
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(0, 230, 118, 0.22);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.22);
   text-decoration: none;
   transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
 .contact-social-btn:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 230, 118, 0.5);
-  box-shadow: 0 14px 34px rgba(0, 230, 118, 0.16);
+  border-color: rgba(var(--imp-text-rgb), 0.5);
+  box-shadow: 0 14px 34px rgba(var(--imp-text-rgb), 0.16);
   color: white;
 }
 
 .contact-label {
   display: block;
   font-weight: 600;
-  color: rgba(241, 255, 250, 0.92);
+  color: rgba(241, 247, 255, 0.92);
   margin-bottom: 6px;
 }
 
 .contact-input {
   background: rgba(15, 12, 41, 0.45) !important;
-  border: 1px solid rgba(0, 230, 118, 0.16) !important;
-  color: rgba(241, 255, 250, 0.96) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.16) !important;
+  color: rgba(241, 247, 255, 0.96) !important;
   border-radius: 16px !important;
   padding: 12px 14px !important;
   box-shadow: none !important;
@@ -1586,29 +1589,29 @@ body.snap-scroll.show-footer .footer {
 }
 
 .contact-input:focus {
-  border-color: rgba(0, 230, 118, 0.45) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.45) !important;
 }
 
 .contact-primary-btn {
-  background: linear-gradient(135deg, rgba(0, 230, 118, 0.26), rgba(6, 78, 59, 0.12)) !important;
-  border: 1px solid rgba(0, 230, 118, 0.35) !important;
-  color: rgba(231, 255, 244, 0.98) !important;
+  background: linear-gradient(135deg, rgba(var(--imp-text-rgb), 0.28), rgba(var(--imp-dark-rgb), 0.14)) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.35) !important;
+  color: rgba(233, 242, 255, 0.98) !important;
   border-radius: 14px !important;
   padding: 10px 16px !important;
   font-weight: 700 !important;
-  box-shadow: 0 10px 30px rgba(0, 230, 118, 0.12);
+  box-shadow: 0 10px 30px rgba(var(--imp-text-rgb), 0.12);
 }
 
 .contact-primary-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px rgba(0, 230, 118, 0.16);
-  border-color: rgba(0, 230, 118, 0.55) !important;
+  box-shadow: 0 14px 34px rgba(var(--imp-text-rgb), 0.16);
+  border-color: rgba(var(--imp-text-rgb), 0.55) !important;
 }
 
 .contact-secondary-btn {
-  background: rgba(6, 78, 59, 0.14) !important;
-  border: 1px solid rgba(0, 230, 118, 0.22) !important;
-  color: rgba(231, 255, 244, 0.98) !important;
+  background: rgba(var(--imp-dark-rgb), 0.14) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.22) !important;
+  color: rgba(233, 242, 255, 0.98) !important;
   border-radius: 14px !important;
   padding: 10px 16px !important;
   font-weight: 700 !important;
@@ -1616,7 +1619,7 @@ body.snap-scroll.show-footer .footer {
 
 .contact-secondary-btn:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 230, 118, 0.5) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.5) !important;
 }
 
 .resume {
@@ -1654,14 +1657,14 @@ body.snap-scroll.show-footer .footer {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #2e7d32;
+  border-left: 2px solid var(--imp-text-color);
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #3479405d;
+  background: rgba(var(--imp-text-rgb), 0.2);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -1691,7 +1694,7 @@ body.snap-scroll.show-footer .footer {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #2e7d32;
+  border: 2px solid var(--imp-text-color);
 }
 
 .like-item {
@@ -1701,8 +1704,8 @@ body.snap-scroll.show-footer .footer {
 }
 
 .like-btn {
-  background-color: #4cce755e !important;
-  border-color: #4cce755e !important;
+  background-color: rgba(var(--imp-text-rgb), 0.26) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.26) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -1711,8 +1714,8 @@ body.snap-scroll.show-footer .footer {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #4dd37a86 !important;
-  border-color: #4dd37a86 !important;
+  background-color: rgba(var(--imp-text-rgb), 0.36) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.36) !important;
 }
 
 .animate-like {
@@ -1741,10 +1744,10 @@ body.snap-scroll.show-footer .footer {
   gap: 10px;
   padding: 0.55rem 0.9rem !important;
   border-radius: 9999px !important;
-  background: rgba(6, 78, 59, 0.18) !important;
-  border: 1px solid rgba(0, 230, 118, 0.28) !important;
-  box-shadow: 0 12px 34px rgba(0, 230, 118, 0.08);
-  color: rgba(231, 255, 244, 0.98) !important;
+  background: rgba(var(--imp-dark-rgb), 0.18) !important;
+  border: 1px solid rgba(var(--imp-text-rgb), 0.28) !important;
+  box-shadow: 0 12px 34px rgba(var(--imp-text-rgb), 0.08);
+  color: rgba(233, 242, 255, 0.98) !important;
   font-family: "Outfit", sans-serif !important;
   font-weight: 600 !important;
   letter-spacing: 0.2px;
@@ -1759,16 +1762,16 @@ body.snap-scroll.show-footer .footer {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background: rgba(6, 78, 59, 0.32) !important;
-  border-color: rgba(0, 230, 118, 0.5) !important;
-  box-shadow: 0 16px 42px rgba(0, 230, 118, 0.12);
-  color: rgba(241, 255, 250, 0.98) !important;
+  background: rgba(var(--imp-dark-rgb), 0.32) !important;
+  border-color: rgba(var(--imp-text-rgb), 0.5) !important;
+  box-shadow: 0 16px 42px rgba(var(--imp-text-rgb), 0.12);
+  color: rgba(241, 247, 255, 0.98) !important;
 }
 
 .fork-btn-inner:focus,
 .fork-btn-inner:focus-visible {
   outline: none !important;
-  box-shadow: 0 0 0 4px rgba(0, 230, 118, 0.18), 0 16px 42px rgba(0, 230, 118, 0.12) !important;
+  box-shadow: 0 0 0 4px rgba(var(--imp-text-rgb), 0.18), 0 16px 42px rgba(var(--imp-text-rgb), 0.12) !important;
 }
 .fork-btn-inner::after {
   display: none !important;

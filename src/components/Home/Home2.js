@@ -63,10 +63,10 @@ function Home2() {
             >
               <p data-reveal className="reveal reveal-up" style={{ "--reveal-delay": "140ms" }}>
                 I am a Computer Science student at <b className="text-white">UiTM</b>, 
-                specializing in <span style={{ color: "#00af5bff", fontWeight: "bold" }}>Mobile Computing</span>.
+                specializing in <span style={{ color: "var(--imp-text-color)", fontWeight: "bold" }}>Mobile Computing</span>.
               </p>
               <p data-reveal className="reveal reveal-up" style={{ "--reveal-delay": "200ms" }}>
-                My passion lies in bridging the gap between <i style={{ color: "#00af5bff" }}>complex backend logic</i> and <i style={{ color: "#00af5bff" }}>intuitive frontend design</i>.
+                My passion lies in bridging the gap between <i style={{ color: "var(--imp-text-color)" }}>complex backend logic</i> and <i style={{ color: "var(--imp-text-color)" }}>intuitive frontend design</i>.
               </p>
 
               {/* Modern Feature Box */}
