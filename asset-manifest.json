@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.156ce1c1.css",
-    "main.js": "/Portfolio/static/js/main.9cfa4949.js",
+    "main.css": "/Portfolio/static/css/main.38fa6da6.css",
+    "main.js": "/Portfolio/static/js/main.95f2aa19.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/gif1.mp4": "/Portfolio/static/media/gif1.b9834256819399ac8563.mp4",
     "static/media/Muhammad Iqbal - RESUME.pdf": "/Portfolio/static/media/Muhammad Iqbal - RESUME.6364c9753dcabe4053bc.pdf",
-    "static/media/RaodCare1.png": "/Portfolio/static/media/RaodCare1.72a36abfc9dccb01d80f.png",
-    "static/media/SmartDispatch.png": "/Portfolio/static/media/SmartDispatch.ab9db7779b0ee39e6aa0.png",
-    "static/media/Travel Diary.png": "/Portfolio/static/media/Travel Diary.b58a25a260d41f58c0d8.png",
-    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/road-care.png": "/Portfolio/static/media/road-care.2821364ae8e0924cf008.png",
+    "static/media/travle-diary.png": "/Portfolio/static/media/travle-diary.43a19945c951436486c9.png",
+    "static/media/smart-disptch.png": "/Portfolio/static/media/smart-disptch.71e06f9d85e2da16650b.png",
     "static/media/Solvnex.png": "/Portfolio/static/media/Solvnex.e3cc677e0530dd5736d1.png",
     "static/media/SQL.svg": "/Portfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
     "static/media/Mongo.svg": "/Portfolio/static/media/Mongo.330a0b8d252ae55ce72f3b6d60388b73.svg",
@@ -20,7 +19,7 @@
     "static/media/React.svg": "/Portfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "static/media/androidstudio.svg": "/Portfolio/static/media/androidstudio.9c4e898a8defd02481a913165f614271.svg",
-    "static/media/microsoft-power-bi.svg": "/Portfolio/static/media/microsoft-power-bi.c5aff9b10a132d6011f090329794ba5d.svg",
+    "static/media/microsoft-power-bi.svg": "/Portfolio/static/media/microsoft-power-bi.6831fba040d3b4e394895c2f4be175f0.svg",
     "static/media/dart.svg": "/Portfolio/static/media/dart.652b45f0fd181e620bb70061d7bc356f.svg",
     "static/media/Java.svg": "/Portfolio/static/media/Java.edcb9f2574179c38ce343ae59e91b5bc.svg",
     "static/media/kalilinux.svg": "/Portfolio/static/media/kalilinux.78f066658443e3deb3b36aa28676937f.svg",
@@ -38,19 +37,18 @@
     "static/media/github.svg": "/Portfolio/static/media/github.c5ecbf4e80f6e910ea8c2a253fd134a3.svg",
     "static/media/Tailwind.svg": "/Portfolio/static/media/Tailwind.5dc20a22c455a7a4efeeb9cba430f50b.svg",
     "static/media/Apple MacOSX.svg": "/Portfolio/static/media/Apple MacOSX.619ec76bf469e3d85a245a7d132edec9.svg",
+    "static/media/trae_ai.svg": "/Portfolio/static/media/trae_ai.293d6030bca1f614fd53586354241b09.svg",
     "static/media/flutter.svg": "/Portfolio/static/media/flutter.81c8fe7d12354c10a54f75b4a5d1ee52.svg",
-    "static/media/trae_ai.svg": "/Portfolio/static/media/trae_ai.0debeeb65065e1405d82434f7c763d42.svg",
-    "static/media/json.svg": "/Portfolio/static/media/json.98025630c09ed2c3dd88e3d235dd37b6.svg",
-    "static/media/figma.svg": "/Portfolio/static/media/figma.b92454497559d90c42cfcbf42dd62660.svg",
+    "static/media/figma.svg": "/Portfolio/static/media/figma.d75e8eaf5f05a28cdf9c722f88ac3245.svg",
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "static/media/clickup.svg": "/Portfolio/static/media/clickup.50b283e18b8c5954cb841ac637e7e832.svg",
     "static/media/burpsuite.svg": "/Portfolio/static/media/burpsuite.a6a4d5e79e8a822cb6a7560cfb9a6ac9.svg",
-    "main.156ce1c1.css.map": "/Portfolio/static/css/main.156ce1c1.css.map",
-    "main.9cfa4949.js.map": "/Portfolio/static/js/main.9cfa4949.js.map",
+    "main.38fa6da6.css.map": "/Portfolio/static/css/main.38fa6da6.css.map",
+    "main.95f2aa19.js.map": "/Portfolio/static/js/main.95f2aa19.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.156ce1c1.css",
-    "static/js/main.9cfa4949.js"
+    "static/css/main.38fa6da6.css",
+    "static/js/main.95f2aa19.js"
   ]
 }
