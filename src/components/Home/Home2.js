@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/about.png";
-import Tilt from "react-parallax-tilt";
 
 function Home2() {
   const sectionRef = useRef(null);
