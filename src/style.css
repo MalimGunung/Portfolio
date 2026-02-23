@@ -1041,6 +1041,107 @@ body.snap-scroll.show-footer .footer {
   height: auto !important;
 }
 
+.projects-scroll-wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.projects-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  gap: 18px;
+  padding: 6px 6px 18px;
+  margin: 0 auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.projects-scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(15, 12, 41, 0.72);
+  color: rgba(241, 247, 255, 0.92);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 0;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, opacity 180ms ease, box-shadow 180ms ease;
+  z-index: 2;
+}
+
+.projects-scroll-btn:hover {
+  transform: translateY(-50%) scale(1.06);
+  background: rgba(var(--imp-text-rgb), 0.12);
+  border-color: rgba(var(--imp-text-rgb), 0.45);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
+}
+
+.projects-scroll-btn:focus,
+.projects-scroll-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(var(--imp-text-rgb), 0.18), 0 18px 44px rgba(0, 0, 0, 0.42);
+}
+
+.projects-scroll-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.projects-scroll-btn-left {
+  left: -22px;
+}
+
+.projects-scroll-btn-right {
+  right: -22px;
+}
+
+.projects-scroll-item {
+  flex: 0 0 auto;
+  width: clamp(280px, 75vw, 440px);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 576px) {
+  .projects-scroll-btn-left {
+    left: 6px;
+  }
+
+  .projects-scroll-btn-right {
+    right: 6px;
+  }
+
+  .projects-scroll-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.projects-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.projects-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.projects-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+}
+
 .project-card-view {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
   color: white !important;
