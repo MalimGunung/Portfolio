@@ -1,13 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.38fa6da6.css",
-    "main.js": "/Portfolio/static/js/main.95f2aa19.js",
+    "main.css": "/Portfolio/static/css/main.23f1925f.css",
+    "main.js": "/Portfolio/static/js/main.ba83dc13.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/gif1.mp4": "/Portfolio/static/media/gif1.b9834256819399ac8563.mp4",
     "static/media/Muhammad Iqbal - RESUME.pdf": "/Portfolio/static/media/Muhammad Iqbal - RESUME.6364c9753dcabe4053bc.pdf",
+    "static/media/I-HAX 2024 INNOVATION HACKATHON.pdf": "/Portfolio/static/media/I-HAX 2024 INNOVATION HACKATHON.250214dafbf8f2ec08f0.pdf",
+    "static/media/Intro-ModernAI.pdf": "/Portfolio/static/media/Intro-ModernAI.097f176aacdf5b3ba36b.pdf",
+    "static/media/Intro-IOT.pdf": "/Portfolio/static/media/Intro-IOT.b61795f529800b699800.pdf",
+    "static/media/Intro-Cybersecurity.pdf": "/Portfolio/static/media/Intro-Cybersecurity.105e963e8c5190d657fd.pdf",
+    "static/media/Cloud-Praticioner-SE.pdf": "/Portfolio/static/media/Cloud-Praticioner-SE.1242264783619ec5acfd.pdf",
+    "static/media/I-HAX 2024-Participation.pdf": "/Portfolio/static/media/I-HAX 2024-Participation.cef80ccbfb93c8d65f27.pdf",
+    "static/media/RecipeApp.png": "/Portfolio/static/media/RecipeApp.53221f6966fd95f89bd4.png",
+    "static/media/TalentScout (1).png": "/Portfolio/static/media/TalentScout (1).4cce75815b8dc76fa0ba.png",
+    "static/media/lola-web.png": "/Portfolio/static/media/lola-web.901d426eca76b1a9299a.png",
+    "static/media/Penetration-Tester.pdf": "/Portfolio/static/media/Penetration-Tester.6094d156b5bb81ea2e15.pdf",
+    "static/media/myspace.png": "/Portfolio/static/media/myspace.052d536dc8a2ad923eb1.png",
     "static/media/road-care.png": "/Portfolio/static/media/road-care.2821364ae8e0924cf008.png",
+    "static/media/Black Arm.png": "/Portfolio/static/media/Black Arm.f12660c4531fc498799b.png",
     "static/media/travle-diary.png": "/Portfolio/static/media/travle-diary.43a19945c951436486c9.png",
+    "static/media/ARC.png": "/Portfolio/static/media/ARC.cbddecbfc1a60dcf5c46.png",
     "static/media/smart-disptch.png": "/Portfolio/static/media/smart-disptch.71e06f9d85e2da16650b.png",
+    "static/media/lola-school.png": "/Portfolio/static/media/lola-school.58cc189eabaef4d36d94.png",
+    "static/media/lola-parent.png": "/Portfolio/static/media/lola-parent.95c55be0f4afc4e49360.png",
     "static/media/Solvnex.png": "/Portfolio/static/media/Solvnex.e3cc677e0530dd5736d1.png",
     "static/media/SQL.svg": "/Portfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
     "static/media/Mongo.svg": "/Portfolio/static/media/Mongo.330a0b8d252ae55ce72f3b6d60388b73.svg",
@@ -43,12 +58,12 @@
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "static/media/clickup.svg": "/Portfolio/static/media/clickup.50b283e18b8c5954cb841ac637e7e832.svg",
     "static/media/burpsuite.svg": "/Portfolio/static/media/burpsuite.a6a4d5e79e8a822cb6a7560cfb9a6ac9.svg",
-    "main.38fa6da6.css.map": "/Portfolio/static/css/main.38fa6da6.css.map",
-    "main.95f2aa19.js.map": "/Portfolio/static/js/main.95f2aa19.js.map",
+    "main.23f1925f.css.map": "/Portfolio/static/css/main.23f1925f.css.map",
+    "main.ba83dc13.js.map": "/Portfolio/static/js/main.ba83dc13.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38fa6da6.css",
-    "static/js/main.95f2aa19.js"
+    "static/css/main.23f1925f.css",
+    "static/js/main.ba83dc13.js"
   ]
 }
