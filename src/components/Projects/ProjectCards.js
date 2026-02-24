@@ -52,7 +52,7 @@ function ProjectCards(props) {
               className="project-card-btn project-card-btn-demo"
             >
               <CgWebsite />
-              {"Demo"}
+              {"View"}
             </Button>
           ) : null}
         </div>
