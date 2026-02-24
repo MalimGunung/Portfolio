@@ -1230,6 +1230,25 @@ body.snap-scroll.show-footer .footer {
   gap: 10px;
 }
 
+.project-title-with-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
 .project-card-btn {
   display: inline-flex !important;
   align-items: center !important;

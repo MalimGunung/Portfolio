@@ -3,12 +3,17 @@ import { Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import blackArmWebsite from "../../Assets/Projects/Black Arm.png";
 import arcWebsite from "../../Assets/Projects/ARC.png";
 import lolaWeb from "../../Assets/Projects/lola-web.png";
+import lolaParent from "../../Assets/Projects/lola-parent.png";
+import lolaSchool from "../../Assets/Projects/lola-school.png";
 import mySpace from "../../Assets/Projects/myspace.png";
 import smartDispatch from "../../Assets/Projects/smart-disptch.png";
 import roadCare from "../../Assets/Projects/road-care.png";
 import travelDiary from "../../Assets/Projects/travle-diary.png";
+import talentScout from "../../Assets/Projects/TalentScout (1).png";
+import recipeApp from "../../Assets/Projects/RecipeApp.png";
 
 function useHorizontalScroll() {
   const scrollRef = useRef(null);
@@ -64,6 +69,7 @@ function useHorizontalScroll() {
 function Projects() {
   const professionalScroll = useHorizontalScroll();
   const universityScroll = useHorizontalScroll();
+  const personalScroll = useHorizontalScroll();
 
   return (
     <Container fluid className="project-section">
@@ -75,8 +81,8 @@ function Projects() {
             className="project-heading"
             style={{ fontSize: "1.75em", marginBottom: "8px" }}
           >
-            Professional Projects{" "}
-            <strong className="purple">/ Freelance</strong>
+            <strong className="purple">Professional / Freelance</strong>
+             {" "} Projects
           </h2>
           <p className="projects-subtitle" style={{ marginBottom: 0 }}>
             Real-world work, client deliverables, and shipped features.
@@ -111,10 +117,43 @@ function Projects() {
           >
             <div className="project-card projects-scroll-item" role="listitem">
               <ProjectCard
+                imgPath={blackArmWebsite}
+                isBlog={false}
+                title={
+                  <span className="project-title-with-badge">
+                    <span>Black Arm Website</span>
+                    <span className="project-status-badge">On-going</span>
+                  </span>
+                }
+                tags={["CMS Website", "Wordpress", "Business Consulting", "SME Growth"]}
+                description={
+                  <>
+                    <div>
+                      Business consultant website designed to help individuals
+                      and SMEs expand their business potential through
+                      expertise, in-depth industry knowledge, and strong
+                      business networks.
+                    </div>
+                    <br />
+                    <div>
+                      Focus: supporting business expansion needs behind the
+                      scenes while clients keep the spotlight.
+                    </div>
+                  </>
+                }
+              />
+            </div>
+            <div className="project-card projects-scroll-item" role="listitem">
+              <ProjectCard
                 imgPath={arcWebsite}
                 isBlog={false}
-                title="ARC Website"
-                tags={["Website", "Wordpress", "Law Information", "Legal Calculator"]}
+                title={
+                  <span className="project-title-with-badge">
+                    <span>ARC Website</span>
+                    <span className="project-status-badge">On-going</span>
+                  </span>
+                }
+                tags={["CMS Website", "Wordpress", "Law Information", "Legal Calculator"]}
                 description={
                   <>
                     <div>
@@ -140,6 +179,7 @@ function Projects() {
                 isBlog={false}
                 title="LOLA Web"
                 tags={["Website", "School Marketplace", "Automation", "School Management", "Payment"]}
+                demoLink="https://lola.my/"
                 description={
                   <>
                     <div>
@@ -154,6 +194,53 @@ function Projects() {
                       <li>Online booking/enrollment and profile pages</li>
                       <li>Parent dashboard for invoices and payments</li>
                       <li>School dashboard for student and billing management</li>
+                    </ul>
+                  </>
+                }
+              />
+            </div>
+            <div className="project-card projects-scroll-item" role="listitem">
+              <ProjectCard
+                imgPath={lolaParent}
+                isBlog={false}
+                title="LOLA Parent"
+                tags={["Mobile App", "Payments", "Communication", "Child Management", "Memo"]}
+                demoLink="https://play.google.com/store/apps/details?id=my.lola.parent&hl=en"
+                description={
+                  <>
+                    <div>
+                      Parent app for child management, including real-time
+                      updates from school and everyday admin tasks.
+                    </div>
+                    <br />
+                    <ul>
+                      <li>Child management (profiles and quick access)</li>
+                      <li>Notifications for child updates from school</li>
+                      <li>Invoices and payments</li>
+                      <li>Memo for notes and reminders</li>
+                    </ul>
+                  </>
+                }
+              />
+            </div>
+            <div className="project-card projects-scroll-item" role="listitem">
+              <ProjectCard
+                imgPath={lolaSchool}
+                isBlog={false}
+                title="LOLA School"
+                tags={["Mobile App", "Student Management", "Billing","Communication", "Memo"]}
+                demoLink="https://play.google.com/store/apps/details?id=my.lola.schoolV2&hl=en"
+                description={
+                  <>
+                    <div>
+                      School-side mobile app for teachers to manage students and
+                      communicate with parents through the LOLA ecosystem.
+                    </div>
+                    <br />
+                    <ul>
+                      <li>Student management for classes and profiles</li>
+                      <li>Memo notifications for updates and reminders</li>
+                      <li>Messaging with parents</li>
                     </ul>
                   </>
                 }
@@ -187,7 +274,7 @@ function Projects() {
 
         <div className="projects-intro" style={{ marginTop: "100px" }}>
           <h2 className="project-heading" style={{ fontSize: "1.75em", marginBottom: "8px" }}>
-            University Projects <strong className="purple">(Academic)</strong>
+             <strong className="purple">Academic</strong> Projects 
           </h2>
           <p className="projects-subtitle" style={{ marginBottom: 0 }}>
             Selected coursework and academic builds.
@@ -308,9 +395,107 @@ function Projects() {
           </div>
           </div>
         </div>
+
+        <div className="projects-intro" style={{ marginTop: "100px" }}>
+          <h2
+            className="project-heading"
+            style={{ fontSize: "1.75em", marginBottom: "8px" }}
+          >
+            <strong className="purple">Personal</strong> Projects
+          </h2>
+          <p className="projects-subtitle" style={{ marginBottom: 0 }}>
+            Side projects, experiments, and self-driven builds.
+          </p>
+        </div>
+
+        <div className="projects-scroll-wrap">
+          <button
+            type="button"
+            className="projects-scroll-btn projects-scroll-btn-left"
+            onClick={() => personalScroll.scrollByOneCard(-1)}
+            disabled={!personalScroll.canScrollLeft}
+            aria-label="Scroll personal projects left"
+          >
+            <FiChevronLeft aria-hidden="true" focusable="false" />
+          </button>
+          <button
+            type="button"
+            className="projects-scroll-btn projects-scroll-btn-right"
+            onClick={() => personalScroll.scrollByOneCard(1)}
+            disabled={!personalScroll.canScrollRight}
+            aria-label="Scroll personal projects right"
+          >
+            <FiChevronRight aria-hidden="true" focusable="false" />
+          </button>
+
+          <div
+            className="projects-scroll"
+            ref={personalScroll.scrollRef}
+            role="list"
+            aria-label="Personal projects"
+          >
+            <div className="project-card projects-scroll-item" role="listitem">
+              <ProjectCard
+                imgPath={talentScout}
+                isBlog={false}
+                title={
+                  <span className="project-title-with-badge">
+                    <span>TalentScout AI</span>
+                    <span className="project-status-badge">On-going</span>
+                  </span>
+                }
+                tags={["AI", "Resume Parsing", "Candidate Matching", "Search"]}
+                description={
+                  <>
+                    <div>
+                      Personal AI project focused on helping streamline hiring
+                      workflows by organizing candidate profiles and improving
+                      shortlisting.
+                    </div>
+                    <br />
+                    <ul>
+                      <li>Upload/parse resumes into structured candidate data</li>
+                      <li>Search and filter candidates by skills and experience</li>
+                      <li>AI-assisted matching and shortlist suggestions</li>
+                    </ul>
+                  </>
+                }
+              />
+            </div>
+
+            <div className="project-card projects-scroll-item" role="listitem">
+              <ProjectCard
+                imgPath={recipeApp}
+                isBlog={false}
+                title={
+                  <span className="project-title-with-badge">
+                    <span>Recipe App</span>
+                    <span className="project-status-badge">On-going</span>
+                  </span>
+                }
+                tags={["Mobile App", "Recipe Discovery", "Favorites", "Meal Planning"]}
+                description={
+                  <>
+                    <div>
+                      Recipe app for discovering meals, saving favorites, and
+                      planning what to cook throughout the week.
+                    </div>
+                    <br />
+                    <ul>
+                      <li>Browse recipes with categories and quick search</li>
+                      <li>Save favorites and build a weekly meal plan</li>
+                      <li>Generate a shopping list from selected recipes</li>
+                    </ul>
+                  </>
+                }
+              />
+            </div>
+          </div>
+        </div>
       </Container>
     </Container>
   );
 }
+
 
 export default Projects;

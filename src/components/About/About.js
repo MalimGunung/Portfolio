@@ -94,6 +94,20 @@ function About() {
               </section>
             </Col>
           </Row>
+
+          <Row className="justify-content-center">
+            <Col lg={10} xl={9}>
+              <section
+                data-reveal
+                className="about-block reveal"
+                style={{ "--reveal-delay": "200ms" }}
+              >
+                <h2 className="about-block-title">
+                  <strong className="purple">Awards</strong> & Certifications
+                </h2>
+              </section>
+            </Col>
+          </Row>
         </Container>
       </Container>
     </>
