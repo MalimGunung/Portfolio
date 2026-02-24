@@ -1465,6 +1465,77 @@ body.snap-scroll.show-footer .footer {
   backdrop-filter: blur(12px) !important;
 }
 
+.about-profile-card {
+  overflow: hidden;
+}
+
+.about-profile-body {
+  padding: 26px 24px !important;
+}
+
+.about-profile-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-profile-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.about-profile-subtitle {
+  color: rgba(165, 165, 165, 0.95);
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
+.about-profile-divider {
+  height: 1px;
+  margin: 16px 0 14px 0;
+  background: linear-gradient(90deg, rgba(var(--imp-text-rgb), 0), rgba(var(--imp-text-rgb), 0.32), rgba(var(--imp-text-rgb), 0));
+  opacity: 0.9;
+}
+
+.about-profile-text {
+  color: rgba(241, 247, 255, 0.96);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.about-profile-section-title {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: rgba(241, 247, 255, 0.98);
+}
+
+.about-hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-hobby-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  background: rgba(var(--imp-text-rgb), 0.12);
+  border: 1px solid rgba(var(--imp-text-rgb), 0.22);
+  color: rgba(233, 242, 255, 0.98);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 .about-activity {
   list-style: none !important;
   text-align: left !important;
@@ -1474,6 +1545,14 @@ body.snap-scroll.show-footer .footer {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+
+  .about-profile-body {
+    padding: 20px 16px !important;
+  }
+
+  .about-profile-title {
+    font-size: 1.25rem;
   }
 }
 /* --------- */

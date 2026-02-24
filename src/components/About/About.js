@@ -197,7 +197,7 @@ function About() {
                       <ProjectCard
                         isBlog={false}
                         title="Cloud Practitioner (SE)"
-                        tags={["Certification"]}
+                        tags={["Certification", "AWS", "Digital Ocean", "Web Hosting"]}
                         demoLink={cloudPractitioner}
                         description={
                           <>
@@ -211,7 +211,7 @@ function About() {
                       <ProjectCard
                         isBlog={false}
                         title="Penetration Tester"
-                        tags={["Certification"]}
+                        tags={["Certification", "Penetration Testing", "Post-exploitation", "Security reporting"]}
                         demoLink={penetrationTester}
                         description={
                           <>
@@ -271,7 +271,7 @@ function About() {
                         demoLink={iHaxHackathon}
                         description={
                           <>
-                            <div>Award / recognition document.</div>
+                            <div>Award / Recognition document.</div>
                           </>
                         }
                       />
