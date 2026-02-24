@@ -143,9 +143,18 @@ function Projects() {
                 description={
                   <>
                     <div>
-                      A web experience with a user-friendly search flow and a
-                      modern, approachable UI.
+                      LOLA is a platform that connects parents with childcare
+                      and kindergarten providers in Malaysia, combining
+                      discovery, booking, and operations management in one
+                      system.
                     </div>
+                    <br />
+                    <ul>
+                      <li>Location-based school discovery with filters</li>
+                      <li>Online booking/enrollment and profile pages</li>
+                      <li>Parent dashboard for invoices and payments</li>
+                      <li>School dashboard for student and billing management</li>
+                    </ul>
                   </>
                 }
               />
@@ -159,9 +168,16 @@ function Projects() {
                 description={
                   <>
                     <div>
-                      A landing page style build with strong visual hierarchy
-                      and an immersive hero section.
+                      MaySpace is the official website for the Postcard to Space
+                      program, guiding participants from registration to
+                      submission.
                     </div>
+                    <br />
+                    <ul>
+                      <li>Two-phase registration: School and Public</li>
+                      <li>Registration forms and participant tracking</li>
+                      <li>Integrated payment flow</li>
+                    </ul>
                   </>
                 }
               />
@@ -169,7 +185,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="projects-intro" style={{ marginTop: "26px" }}>
+        <div className="projects-intro" style={{ marginTop: "100px" }}>
           <h2 className="project-heading" style={{ fontSize: "1.75em", marginBottom: "8px" }}>
             University Projects <strong className="purple">(Academic)</strong>
           </h2>
