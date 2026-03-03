@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.23f1925f.css",
-    "main.js": "/Portfolio/static/js/main.ba83dc13.js",
+    "main.css": "/Portfolio/static/css/main.6ba280c5.css",
+    "main.js": "/Portfolio/static/js/main.119ba466.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/gif1.mp4": "/Portfolio/static/media/gif1.b9834256819399ac8563.mp4",
     "static/media/Muhammad Iqbal - RESUME.pdf": "/Portfolio/static/media/Muhammad Iqbal - RESUME.6364c9753dcabe4053bc.pdf",
@@ -45,25 +45,23 @@
     "static/media/google-cloud.svg": "/Portfolio/static/media/google-cloud.52babc311cb38eae3e0e9a1bef1a03ef.svg",
     "static/media/n8n.svg": "/Portfolio/static/media/n8n.6e8826faf9c717e726c2de0f28a39f0a.svg",
     "static/media/jira.svg": "/Portfolio/static/media/jira.ffa8673d4f028acb49e376287f097cfe.svg",
-    "static/media/Typescript.svg": "/Portfolio/static/media/Typescript.da311fe2461aa58c2cbe9f6948c497c7.svg",
     "static/media/cypress.svg": "/Portfolio/static/media/cypress.4e54847550b563f7d8c4f3e5317ce7ac.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/Git.svg": "/Portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/github.svg": "/Portfolio/static/media/github.c5ecbf4e80f6e910ea8c2a253fd134a3.svg",
     "static/media/Tailwind.svg": "/Portfolio/static/media/Tailwind.5dc20a22c455a7a4efeeb9cba430f50b.svg",
-    "static/media/Apple MacOSX.svg": "/Portfolio/static/media/Apple MacOSX.619ec76bf469e3d85a245a7d132edec9.svg",
     "static/media/trae_ai.svg": "/Portfolio/static/media/trae_ai.293d6030bca1f614fd53586354241b09.svg",
     "static/media/flutter.svg": "/Portfolio/static/media/flutter.81c8fe7d12354c10a54f75b4a5d1ee52.svg",
     "static/media/figma.svg": "/Portfolio/static/media/figma.d75e8eaf5f05a28cdf9c722f88ac3245.svg",
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "static/media/clickup.svg": "/Portfolio/static/media/clickup.50b283e18b8c5954cb841ac637e7e832.svg",
     "static/media/burpsuite.svg": "/Portfolio/static/media/burpsuite.a6a4d5e79e8a822cb6a7560cfb9a6ac9.svg",
-    "main.23f1925f.css.map": "/Portfolio/static/css/main.23f1925f.css.map",
-    "main.ba83dc13.js.map": "/Portfolio/static/js/main.ba83dc13.js.map",
+    "main.6ba280c5.css.map": "/Portfolio/static/css/main.6ba280c5.css.map",
+    "main.119ba466.js.map": "/Portfolio/static/js/main.119ba466.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23f1925f.css",
-    "static/js/main.ba83dc13.js"
+    "static/css/main.6ba280c5.css",
+    "static/js/main.119ba466.js"
   ]
 }
