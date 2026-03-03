@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import clickup from "../../Assets/TechIcons/clickup.svg";
 import traeAi from "../../Assets/TechIcons/trae_ai.svg";
@@ -20,7 +19,6 @@ import BurpSuite from "../../Assets/TechIcons/burpsuite.svg";
 
 function Toolstack() {
   const items = [
-    { src: macOs, alt: "macOs", label: "Mac Os" },
     { src: vsCode, alt: "vsCode", label: "Vs Code" },
     { src: Git, alt: "Git", label: "Git" },
     { src: GitHub, alt: "GitHub", label: "GitHub" },

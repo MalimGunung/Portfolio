@@ -31,7 +31,7 @@ function AboutCard() {
         </div>
         <div className="about-hobby-list" role="list">
           <span className="about-hobby-pill" role="listitem">
-            Playing Games 🎮
+            Play Games 🎮
           </span>
           <span className="about-hobby-pill" role="listitem">
             Badminton 🏸
@@ -43,7 +43,7 @@ function AboutCard() {
             Swimming 🏊
           </span>
           <span className="about-hobby-pill" role="listitem">
-            Jungle Hiking 🥾
+           Hiking 🥾
           </span>
         </div>
       </Card.Body>

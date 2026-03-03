@@ -196,98 +196,168 @@ function About() {
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="Cloud Practitioner (SE)"
-                        tags={["Certification", "AWS", "Digital Ocean", "Web Hosting"]}
+                        title={
+                          <div>
+                            <div>Cloud Practitioner (Sofware Engineer)</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              Runcloud Education
+                            </div>
+                          </div>
+                        }
+                        tags={["Certification", "AWS", "Digital Ocean", "Web Hosting", "GitHub"]}
                         demoLink={cloudPractitioner}
-                        description={
-                          <>
-                            <div>Certification credential document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="Penetration Tester"
-                        tags={["Certification", "Penetration Testing", "Post-exploitation", "Security reporting"]}
+                        title={
+                          <div>
+                            <div>Penetration Tester</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              0 Day Academy
+                            </div>
+                          </div>
+                        }
+                        tags={["Certification", "Penetration Testing", "Post-exploitation", "Security reporting", "Penetration Tools"]}
                         demoLink={penetrationTester}
-                        description={
-                          <>
-                            <div>Certification credential document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="Introduction to Cybersecurity"
-                        tags={["Certification"]}
+                        title={
+                          <div>
+                            <div>Introduction to Cybersecurity</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              Cisco Networking Academy
+                            </div>
+                          </div>
+                        }
+                        tags={["Threat Detection", "Network Vulnerabilities", "Cybersecurity", "Cyber Best Practices"]}
                         demoLink={introCybersecurity}
-                        description={
-                          <>
-                            <div>Certification credential document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="Introduction to IoT"
-                        tags={["Certification"]}
+                        title={
+                          <div>
+                            <div>Introduction to IoT</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              Cisco Networking Academy
+                            </div>
+                          </div>
+                        }
+                        tags={["Packet Tracer", "Python", "Internet of Things (IoT)", "Cloud Computing"]}
                         demoLink={introIot}
-                        description={
-                          <>
-                            <div>Certification credential document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="Introduction to Modern AI"
-                        tags={["Certification"]}
+                        title={
+                          <div>
+                            <div>Introduction to Modern AI</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              Cisco Networking Academy
+                            </div>
+                          </div>
+                        }
+                        tags={["Artificial Intelligence", "Machine Learning", "Chatbots Prompts"]}
                         demoLink={introModernAi}
-                        description={
-                          <>
-                            <div>Certification credential document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="I-HAX 2024 Innovation Hackathon"
-                        tags={["Award"]}
+                        title={
+                          <div>
+                            <div>Hackathon Winner</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              I-HAX 2024 Innovation Hackathon
+                            </div>
+                          </div>
+                        }
+                        tags={["Award", "Technology Innovation", "SDG", "Global Impact", "Problem Solving"]}
                         demoLink={iHaxHackathon}
-                        description={
-                          <>
-                            <div>Award / Recognition document.</div>
-                          </>
-                        }
+                        description={null}
                       />
                     </div>
 
                     <div className="project-card projects-scroll-item" role="listitem">
                       <ProjectCard
                         isBlog={false}
-                        title="I-HAX 2024 Participation"
-                        tags={["Participation"]}
-                        demoLink={iHaxParticipation}
-                        description={
-                          <>
-                            <div>Participation certificate document.</div>
-                          </>
+                        title={
+                          <div>
+                            <div>Hackathon Participation</div>
+                            <div
+                              style={{
+                                marginTop: "6px",
+                                color: "rgba(165, 165, 165, 0.95)",
+                                fontSize: "0.95rem",
+                                fontWeight: 600,
+                              }}
+                            >
+                              I-HAX 2024 Innovation Hackathon
+                            </div>
+                          </div>
                         }
+                        tags={["Participation", "Teamwork", "Problem Solving", "Time Management"]}
+                        demoLink={iHaxParticipation}
+                        description={null}
                       />
                     </div>
                   </div>
